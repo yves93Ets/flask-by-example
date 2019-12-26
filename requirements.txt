@@ -1,2 +1,7 @@
-Flask==0.10.1
+Flask
 gunicorn==19.4.5
+python-dotenv
+Psycopg2
+Flask-SQLAlchemy==2.1
+Flask-Migrate==1.8.0
+Flask-Script

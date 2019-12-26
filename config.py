@@ -7,7 +7,8 @@ class Config(object):
     TESTING = False
     CSRF_ENABLED = True
     SECRET_KEY = 'this-really-needs-to-be-changed'
-
+    SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
+    # local SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:gabyv@localhost/wordcount_dev'
 
 class ProductionConfig(Config):
     DEBUG = False
