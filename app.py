@@ -9,6 +9,7 @@ try:
     APP_SETTINGS = os.environ['APP_SETTINGS']
 except:
     APP_SETTINGS = "config.DevelopmentConfig"
+
 app.config.from_object(APP_SETTINGS)
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
